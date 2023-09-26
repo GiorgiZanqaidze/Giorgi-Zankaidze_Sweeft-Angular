@@ -14,8 +14,8 @@ export class UserDetailsComponent implements OnInit{
   constructor(private route: ActivatedRoute, private userService: UserService, private elementRef: ElementRef) {
   }
 
-  user: any
-  friends: any = []
+  user!: User;
+  friends: any = [];
   page: number = 1;
   perPage: number = 5;
   loading: boolean = false;
@@ -24,7 +24,7 @@ export class UserDetailsComponent implements OnInit{
   ngOnInit() {
       this.route.params.subscribe((params) => {
         this.userId = +params['id']
-        this.userService.getUserById(this.userId).subscribe((res) => {
+        this.userService.getUserById(this.userId).subscribe((res: any) => {
           this.user = res
         })
         this.getFriends(this.userId)
