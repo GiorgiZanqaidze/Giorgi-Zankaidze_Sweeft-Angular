@@ -16,11 +16,17 @@ export class UserDetailsComponent implements OnInit{
   user: any
 
   ngOnInit() {
+    let userId
       this.route.params.subscribe((params) => {
-        console.log(params)
         this.userService.getUserById(params['id']).subscribe((res) => {
           this.user = res
+          userId = params['id']
+          console.log(res)
         })
       })
+
+    this.userService.getUserFriends(1).subscribe((res) => {
+      console.log(res)
+    })
   }
 }

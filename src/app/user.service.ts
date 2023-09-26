@@ -18,4 +18,9 @@ export class UserService {
   public getUserById(id: number|string) {
     return this.http.get(`http://localhost:3000/users/${id}`)
   }
+
+  public getUserFriends(id: number|string| undefined) {
+    // return this.http.get(`http://localhost:3000/users/${id}?_embed=friends`);
+    return this.http.get(`http://localhost:3000/friends?userId=${id}`);
+  }
 }
