@@ -16,6 +16,10 @@ const routes: Routes = [
   {
     path: 'users-list/user/:id',
     component: UserDetailsComponent
+  },
+  {
+    path: '**',
+    redirectTo: 'users-list'
   }
 ];
 
