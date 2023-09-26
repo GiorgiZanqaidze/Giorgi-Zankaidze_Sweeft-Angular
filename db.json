@@ -189,51 +189,186 @@
       "description": "A teacher"
     }
   ],
+
+
+
   "friends": [
     {
       "id": 1,
       "userId": 1,
-      "friendId": 2
+      "friend": {
+        "id": 26,
+        "firstName": "Chloe",
+        "lastName": "Lopez",
+        "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+        "description": "A teacher"
+      }
     },
+
     {
       "id": 2,
       "userId": 1,
-      "friendId": 5
+      "friend": {
+        "id": 26,
+        "firstName": "Chloe",
+        "lastName": "Lopez",
+        "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+        "description": "A teacher"
+      }
     },
     {
       "id": 3,
       "userId": 1,
-      "friendId": 8
+      "friend": {
+        "id": 26,
+        "firstName": "Chloe",
+        "lastName": "Lopez",
+        "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+        "description": "A teacher"
+      }
     },
     {
       "id": 4,
       "userId": 1,
-      "friendId": 3
+      "friend": {
+        "id": 26,
+        "firstName": "Chloe",
+        "lastName": "Lopez",
+        "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+        "description": "A teacher"
+      }
     },
     {
       "id": 5,
       "userId": 1,
-      "friendId": 4
+      "friend": {
+        "id": 26,
+        "firstName": "Chloe",
+        "lastName": "Lopez",
+        "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+        "description": "A teacher"
+      }
     },
     {
       "id": 6,
       "userId": 1,
-      "friendId": 1
+      "friend": {
+        "id": 26,
+        "firstName": "Chloe",
+        "lastName": "Lopez",
+        "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+        "description": "A teacher"
+      }
     },
     {
       "id": 7,
-      "userId": 2,
-      "friendId": 3
+      "userId": 1,
+      "friend": {
+        "id": 15,
+        "firstName": "Matthew",
+        "lastName": "Martinez",
+        "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+        "description": "A pharmacist"
+      }
     },
     {
       "id": 8,
-      "userId": 2,
-      "friendId": 4
+      "userId": 1,
+      "friend": {
+        "id": 15,
+        "firstName": "Matthew",
+        "lastName": "Martinez",
+        "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+        "description": "A pharmacist"
+      }
     },
     {
       "id": 9,
-      "userId": 2,
-      "friendId": 1
+      "userId": 1,
+      "friend": {
+        "id": 15,
+        "firstName": "Matthew",
+        "lastName": "Martinez",
+        "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+        "description": "A pharmacist"
+      }
+    },
+    {
+      "id": 8,
+      "userId": 1,
+      "friend": {
+        "id": 15,
+        "firstName": "Matthew",
+        "lastName": "Martinez",
+        "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+        "description": "A pharmacist"
+      }
+    },
+    {
+      "id": 9,
+      "userId": 1,
+      "friend": {
+        "id": 15,
+        "firstName": "Matthew",
+        "lastName": "Martinez",
+        "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+        "description": "A pharmacist"
+      }
+    },
+    {
+      "id": 7,
+      "userId": 1,
+      "friend": {
+        "id": 15,
+        "firstName": "Matthew",
+        "lastName": "Martinez",
+        "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+        "description": "A pharmacist"
+      }
+    },
+    {
+      "id": 8,
+      "userId": 1,
+      "friend": {
+        "id": 15,
+        "firstName": "Matthew",
+        "lastName": "Martinez",
+        "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+        "description": "A pharmacist"
+      }
+    },
+    {
+      "id": 9,
+      "userId": 1,
+      "friend": {
+        "id": 15,
+        "firstName": "Matthew",
+        "lastName": "Martinez",
+        "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+        "description": "A pharmacist"
+      }
+    },
+    {
+      "id": 8,
+      "userId": 1,
+      "friend": {
+        "id": 15,
+        "firstName": "Matthew",
+        "lastName": "Martinez",
+        "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+        "description": "A pharmacist"
+      }
+    },
+    {
+      "id": 9,
+      "userId": 1,
+      "friend": {
+        "id": 15,
+        "firstName": "Matthew",
+        "lastName": "Martinez",
+        "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+        "description": "A pharmacist"
+      }
     }
   ]
 }
