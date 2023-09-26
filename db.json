@@ -1,0 +1,291 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "profilePic": "https://file.xunruicms.com/admin_html/assets/pages/media/profile/profile_user.jpg",
+      "description": "A software engineer"
+    },
+    {
+      "id": 2,
+      "firstName": "Alice",
+      "lastName": "Smith",
+      "profilePic": "https://imgv3.fotor.com/images/slider-image/A-clear-image-of-a-woman-wearing-red-sharpened-by-Fotors-image-sharpener.jpg",
+      "description": "An artist and designer"
+    },
+    {
+      "id": 3,
+      "firstName": "Bob",
+      "lastName": "Johnson",
+      "profilePic": "https://imgv3.fotor.com/images/slider-image/A-clear-image-of-a-woman-wearing-red-sharpened-by-Fotors-image-sharpener.jpg",
+      "description": "A data analyst"
+    },
+    {
+      "id": 4,
+      "firstName": "Emma",
+      "lastName": "Williams",
+      "profilePic": "https://file.xunruicms.com/admin_html/assets/pages/media/profile/profile_user.jpg",
+      "description": "A teacher"
+    },
+    {
+      "id": 5,
+      "firstName": "David",
+      "lastName": "Brown",
+      "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+      "description": "A chef"
+    },
+    {
+      "id": 6,
+      "firstName": "Olivia",
+      "lastName": "Jones",
+      "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+      "description": "A biologist"
+    },
+    {
+      "id": 7,
+      "firstName": "James",
+      "lastName": "Lee",
+      "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+      "description": "A musician"
+    },
+    {
+      "id": 8,
+      "firstName": "Sophia",
+      "lastName": "Clark",
+      "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+      "description": "An architect"
+    },
+    {
+      "id": 9,
+      "firstName": "William",
+      "lastName": "Walker",
+      "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+      "description": "A doctor"
+    },
+    {
+      "id": 10,
+      "firstName": "Charlotte",
+      "lastName": "Moore",
+      "profilePic": "https://file.xunruicms.com/admin_html/assets/pages/media/profile/profile_user.jpg",
+      "description": "A journalist"
+    },
+    {
+      "id": 11,
+      "firstName": "Michael",
+      "lastName": "Wilson",
+      "profilePic": "https://file.xunruicms.com/admin_html/assets/pages/media/profile/profile_user.jpg",
+      "description": "An engineer"
+    },
+    {
+      "id": 12,
+      "firstName": "Emily",
+      "lastName": "Harris",
+      "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+      "description": "An author"
+    },
+    {
+      "id": 13,
+      "firstName": "Daniel",
+      "lastName": "King",
+      "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+      "description": "A scientist"
+    },
+    {
+      "id": 14,
+      "firstName": "Ava",
+      "lastName": "Anderson",
+      "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+      "description": "A lawyer"
+    },
+    {
+      "id": 15,
+      "firstName": "Matthew",
+      "lastName": "Martinez",
+      "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+      "description": "A pharmacist"
+    },
+    {
+      "id": 16,
+      "firstName": "Lily",
+      "lastName": "Gonzalez",
+      "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+      "description": "A nurse"
+    },
+    {
+      "id": 17,
+      "firstName": "Ethan",
+      "lastName": "Adams",
+      "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+      "description": "A pilot"
+    },
+    {
+      "id": 18,
+      "firstName": "Mia",
+      "lastName": "Hall",
+      "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+      "description": "An artist"
+    },
+    {
+      "id": 19,
+      "firstName": "Joseph",
+      "lastName": "Young",
+      "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+      "description": "A firefighter"
+    },
+    {
+      "id": 20,
+      "firstName": "Chloe",
+      "lastName": "Lopez",
+      "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+      "description": "A teacher"
+    },
+    {
+      "id": 21,
+      "firstName": "Matthew",
+      "lastName": "Martinez",
+      "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+      "description": "A pharmacist"
+    },
+    {
+      "id": 22,
+      "firstName": "Lily",
+      "lastName": "Gonzalez",
+      "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+      "description": "A nurse"
+    },
+    {
+      "id": 23,
+      "firstName": "Ethan",
+      "lastName": "Adams",
+      "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+      "description": "A pilot"
+    },
+    {
+      "id": 24,
+      "firstName": "Mia",
+      "lastName": "Hall",
+      "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+      "description": "An artist"
+    },
+    {
+      "id": 25,
+      "firstName": "Joseph",
+      "lastName": "Young",
+      "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+      "description": "A firefighter"
+    },
+    {
+      "id": 26,
+      "firstName": "Chloe",
+      "lastName": "Lopez",
+      "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+      "description": "A teacher"
+    }
+  ],
+
+
+
+  "friends": [
+    {
+      "id": 1,
+      "userId": 1,
+      "friend": {
+        "id": 2,
+        "firstName": "Chloe",
+        "lastName": "Lopez",
+        "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+        "description": "A teacher"
+      }
+    },
+
+    {
+      "id": 2,
+      "userId": 2,
+      "friend": {
+        "id": 1,
+        "firstName": "Chloe",
+        "lastName": "Lopez",
+        "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+        "description": "A teacher"
+      }
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "friend": {
+        "id": 3,
+        "firstName": "Chloe",
+        "lastName": "Lopez",
+        "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+        "description": "A teacher"
+      }
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "friend": {
+        "id": 26,
+        "firstName": "Chloe",
+        "lastName": "Lopez",
+        "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+        "description": "A teacher"
+      }
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "friend": {
+        "id": 26,
+        "firstName": "Chloe",
+        "lastName": "Lopez",
+        "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+        "description": "A teacher"
+      }
+    },
+    {
+      "id": 6,
+      "userId": 1,
+      "friend": {
+        "id": 26,
+        "firstName": "Chloe",
+        "lastName": "Lopez",
+        "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+        "description": "A teacher"
+      }
+    },
+    {
+      "id": 7,
+      "userId": 1,
+      "friend": {
+        "id": 15,
+        "firstName": "Matthew",
+        "lastName": "Martinez",
+        "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+        "description": "A pharmacist"
+      }
+    },
+    {
+      "id": 8,
+      "userId": 1,
+      "friend": {
+        "id": 15,
+        "firstName": "Matthew",
+        "lastName": "Martinez",
+        "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+        "description": "A pharmacist"
+      }
+    },
+    {
+      "id": 9,
+      "userId": 1,
+      "friend": {
+        "id": 15,
+        "firstName": "Matthew",
+        "lastName": "Martinez",
+        "profilePic": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+        "description": "A pharmacist"
+      }
+    }
+  ]
+}
