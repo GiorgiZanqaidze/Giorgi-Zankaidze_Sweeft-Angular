@@ -1,0 +1,145 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "profilePic": "https://example.com/john.jpg",
+      "description": "A software engineer"
+    },
+    {
+      "id": 2,
+      "firstName": "Alice",
+      "lastName": "Smith",
+      "profilePic": "https://example.com/alice.jpg",
+      "description": "An artist and designer"
+    },
+    {
+      "id": 3,
+      "firstName": "Bob",
+      "lastName": "Johnson",
+      "profilePic": "https://example.com/bob.jpg",
+      "description": "A data analyst"
+    },
+    {
+      "id": 4,
+      "firstName": "Emma",
+      "lastName": "Williams",
+      "profilePic": "https://example.com/emma.jpg",
+      "description": "A teacher"
+    },
+    {
+      "id": 5,
+      "firstName": "David",
+      "lastName": "Brown",
+      "profilePic": "https://example.com/david.jpg",
+      "description": "A chef"
+    },
+    {
+      "id": 6,
+      "firstName": "Olivia",
+      "lastName": "Jones",
+      "profilePic": "https://example.com/olivia.jpg",
+      "description": "A biologist"
+    },
+    {
+      "id": 7,
+      "firstName": "James",
+      "lastName": "Lee",
+      "profilePic": "https://example.com/james.jpg",
+      "description": "A musician"
+    },
+    {
+      "id": 8,
+      "firstName": "Sophia",
+      "lastName": "Clark",
+      "profilePic": "https://example.com/sophia.jpg",
+      "description": "An architect"
+    },
+    {
+      "id": 9,
+      "firstName": "William",
+      "lastName": "Walker",
+      "profilePic": "https://example.com/william.jpg",
+      "description": "A doctor"
+    },
+    {
+      "id": 10,
+      "firstName": "Charlotte",
+      "lastName": "Moore",
+      "profilePic": "https://example.com/charlotte.jpg",
+      "description": "A journalist"
+    },
+    {
+      "id": 11,
+      "firstName": "Michael",
+      "lastName": "Wilson",
+      "profilePic": "https://example.com/michael.jpg",
+      "description": "An engineer"
+    },
+    {
+      "id": 12,
+      "firstName": "Emily",
+      "lastName": "Harris",
+      "profilePic": "https://example.com/emily.jpg",
+      "description": "An author"
+    },
+    {
+      "id": 13,
+      "firstName": "Daniel",
+      "lastName": "King",
+      "profilePic": "https://example.com/daniel.jpg",
+      "description": "A scientist"
+    },
+    {
+      "id": 14,
+      "firstName": "Ava",
+      "lastName": "Anderson",
+      "profilePic": "https://example.com/ava.jpg",
+      "description": "A lawyer"
+    },
+    {
+      "id": 15,
+      "firstName": "Matthew",
+      "lastName": "Martinez",
+      "profilePic": "https://example.com/matthew.jpg",
+      "description": "A pharmacist"
+    },
+    {
+      "id": 16,
+      "firstName": "Lily",
+      "lastName": "Gonzalez",
+      "profilePic": "https://example.com/lily.jpg",
+      "description": "A nurse"
+    },
+    {
+      "id": 17,
+      "firstName": "Ethan",
+      "lastName": "Adams",
+      "profilePic": "https://example.com/ethan.jpg",
+      "description": "A pilot"
+    },
+    {
+      "id": 18,
+      "firstName": "Mia",
+      "lastName": "Hall",
+      "profilePic": "https://example.com/mia.jpg",
+      "description": "An artist"
+    },
+    {
+      "id": 19,
+      "firstName": "Joseph",
+      "lastName": "Young",
+      "profilePic": "https://example.com/joseph.jpg",
+      "description": "A firefighter"
+    },
+    {
+      "id": 20,
+      "firstName": "Chloe",
+      "lastName": "Lopez",
+      "profilePic": "https://example.com/chloe.jpg",
+      "description": "A teacher"
+    }
+  ]
+
+}

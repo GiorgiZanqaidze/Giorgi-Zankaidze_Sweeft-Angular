@@ -3,16 +3,6 @@
     <h1 class="">Users</h1>
   </header>
   <main class="grid grid-cols-4 gap-10">
-    <app-user-item></app-user-item>
-    <app-user-item></app-user-item>
-    <app-user-item></app-user-item>
-    <app-user-item></app-user-item>
-    <app-user-item></app-user-item>
-    <app-user-item></app-user-item>
-    <app-user-item></app-user-item>
-    <app-user-item></app-user-item>
-    <app-user-item></app-user-item>
-    <app-user-item></app-user-item>
-    <app-user-item></app-user-item>
+    <app-user-item *ngFor="let user of users" [userData]="user"></app-user-item>
   </main>
 </div>
