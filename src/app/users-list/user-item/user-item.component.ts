@@ -8,7 +8,7 @@ import {User} from "../../user";
 })
 export class UserItemComponent implements OnInit{
 
-  @Input() userData: any;
+  @Input() userData!: User;
 
   ngOnInit() {
 
