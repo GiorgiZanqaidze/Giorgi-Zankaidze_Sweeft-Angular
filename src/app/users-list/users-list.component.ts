@@ -1,4 +1,4 @@
-import {Component, HostListener, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit, TemplateRef, ViewChild} from '@angular/core';
 import {UserService} from "../user.service";
 import {User} from "../user";
 
@@ -8,7 +8,7 @@ import {User} from "../user";
   styleUrls: ['./users-list.component.css']
 })
 export class UsersListComponent implements OnInit{
-
+  @ViewChild('elseBlock') elseBlock!: TemplateRef<any>
 
   constructor(private userService: UserService) {
   }
