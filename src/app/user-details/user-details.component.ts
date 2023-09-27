@@ -18,9 +18,9 @@ export class UserDetailsComponent implements OnInit{
   user!: User;
   friends: any = [];
   page: number = 1;
-  perPage: number = 3;
+  perPage: number = 2;
   loading: boolean = false;
-  userId: any
+  userId!: number
 
   ngOnInit() {
       this.route.params.subscribe((params) => {
@@ -28,43 +28,15 @@ export class UserDetailsComponent implements OnInit{
         this.userService.getUserById(this.userId).subscribe((res: any) => {
           this.user = res
         })
-        this.getFriendsOnLoad()
+        this.getFriendsOnScroll()
         this.scrollToTop();
       })
   }
 
-  getFriendsOnScroll(userId: any) {
-    this.userService.getUserFriends(userId, this.page, this.perPage).subscribe((res: any) => {
-      const newFriends = res.map((item: any) => {
-        const friend: User = {
-          id: item.friend.id,
-          firstName: item.friend.firstName,
-          lastName: item.friend.lastName,
-          profilePic: item.friend.profilePic,
-          description: item.friend.description
-        }
-        return friend
-      })
-      this.friends = [...this.friends, ...newFriends]
+  getFriendsOnScroll() {
+    this.userService.getUserFriends(this.userId, this.page, this.perPage).subscribe((friends: User[]) => {
+      this.friends = [...this.friends, ...friends]
       this.page++
-    })
-  }
-
-  getFriendsOnLoad() {
-    this.userService.getUserFriends(this.userId).subscribe((res: any) => {
-      const friends = res.map((item: any) => {
-        const friend: User = {
-          id: item.friend.id,
-          firstName: item.friend.firstName,
-          lastName: item.friend.lastName,
-          profilePic: item.friend.profilePic,
-          description: item.friend.description
-        }
-        return friend
-      })
-      this.friends = friends
-      this.page++
-      console.log(friends)
     })
   }
 
@@ -78,7 +50,7 @@ export class UserDetailsComponent implements OnInit{
       window.innerHeight + window.scrollY >= document.body.offsetHeight &&
       !this.loading
     ) {
-      this.getFriendsOnScroll(this.userId);
+      this.getFriendsOnScroll();
     }
   }
 }

@@ -15,7 +15,7 @@ export class UsersListComponent implements OnInit{
 
   users:User[] = []
   page: number = 1;
-  perPage: number = 10;
+  perPage: number = 9;
   loading: boolean = false;
 
 

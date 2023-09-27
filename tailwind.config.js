@@ -2,6 +2,13 @@
 module.exports = {
   content: ["./src/**/*.{html,ts}",],
   theme: {
+    screens: {
+      'sm': '640px',
+      'md': '800px',
+      'lg': '900px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
     extend: {
       colors: {
         'pink': '#0F2C59',

@@ -1,0 +1,75 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "profilePic": "https://file.xunruicms.com/admin_html/assets/pages/media/profile/profile_user.jpg",
+      "description": "A software engineer",
+      "friends": [
+        {
+          "id": 2,
+          "firstName": "Alice",
+          "lastName": "Smith",
+          "profilePic": "https://imgv3.fotor.com/images/slider-image/A-clear-image-of-a-woman-wearing-red-sharpened-by-Fotors-image-sharpener.jpg",
+          "description": "An artist and designer"
+        },
+        {
+          "id": 3,
+          "firstName": "Bob",
+          "lastName": "Johnson",
+          "profilePic": "https://imgv3.fotor.com/images/slider-image/A-clear-image-of-a-woman-wearing-red-sharpened-by-Fotors-image-sharpener.jpg",
+          "description": "A data analyst"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "firstName": "Alice",
+      "lastName": "Smith",
+      "profilePic": "https://imgv3.fotor.com/images/slider-image/A-clear-image-of-a-woman-wearing-red-sharpened-by-Fotors-image-sharpener.jpg",
+      "description": "An artist and designer",
+      "friends": [
+        {
+          "id": 1,
+          "firstName": "John",
+          "lastName": "Doe",
+          "profilePic": "https://file.xunruicms.com/admin_html/assets/pages/media/profile/profile_user.jpg",
+          "description": "A software engineer"
+        },
+        {
+          "id": 4,
+          "firstName": "Eva",
+          "lastName": "Brown",
+          "profilePic": "https://example.com/eva.jpg",
+          "description": "A writer"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "firstName": "Bob",
+      "lastName": "Johnson",
+      "profilePic": "https://imgv3.fotor.com/images/slider-image/A-clear-image-of-a-woman-wearing-red-sharpened-by-Fotors-image-sharpener.jpg",
+      "description": "A data analyst",
+      "friends": [
+        {
+          "id": 1,
+          "firstName": "John",
+          "lastName": "Doe",
+          "profilePic": "https://file.xunruicms.com/admin_html/assets/pages/media/profile/profile_user.jpg",
+          "description": "A software engineer"
+        },
+        {
+          "id": 5,
+          "firstName": "Charlie",
+          "lastName": "Wilson",
+          "profilePic": "https://example.com/charlie.jpg",
+          "description": "A scientist"
+        }
+      ]
+    }
+  ]
+
+
+}
