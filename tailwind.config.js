@@ -13,8 +13,11 @@ module.exports = {
       colors: {
         'pink': '#0F2C59',
         'red': '#F8F0E5',
-        'orange': '#DAC0A3',
-        'yellow': '#F39F5A'
+        'orange': '#121212',
+        'yellow': '#F39F5A',
+        "light-pink": "#8E24AA",
+        "font-pink": "#FF78F0",
+        "white": "#ffffff"
       },
     },
   },

@@ -1,13 +1,14 @@
-<div class="p-10 flex flex-col gap-5">
-  <header class="border-pink pb-5 mb-5 border-b-2">
-    <h1 class="text-3xl font-bold text-pink tracking-wide">Users List</h1>
+<div class="p-10 flex flex-col gap-5 border-l border-light-pink border-t rounded-tl-xl">
+  <header class="border-light-pink pb-5 mb-5 border-b-[1px]">
+    <h1 class=" font-bold text-white tracking-widest text-md md:text-4xl">Users List</h1>
   </header>
-  <main class="grid grid-cols-1 md:grid-cols-2 gap-20 lg:grid-cols-3 mx-auto" *ngIf="users.length > 0; else elseBlock">
+  <main class="grid grid-cols-1 md:grid-cols-2 gap-20 lg:grid-cols-3 mx-auto" *ngIf="users.length > 0 || !loading; else elseBlock">
     <app-user-item *ngFor="let user of users" [userData]="user" [navigateTrue]="true"></app-user-item>
+    <ng-template #elseBlock>
+      <div class="text-3xl font-bold text-white mt-20 ">
+        <h1>Users Not Found</h1>
+      </div>
+    </ng-template>
   </main>
-  <ng-template #elseBlock>
-    <div class="text-3xl font-bold text-pink mt-20 ">
-      <h1>Users Not Found</h1>
-    </div>
-  </ng-template>
+  <app-loading-item *ngIf="loading"></app-loading-item>
 </div>
