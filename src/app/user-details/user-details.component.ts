@@ -1,4 +1,4 @@
-import {Component, HostListener, OnInit, ElementRef} from '@angular/core';
+import {Component, HostListener, OnInit, ElementRef, ViewChild, TemplateRef} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {UserService} from "../user.service";
 import {User} from "../user";
@@ -9,6 +9,7 @@ import {User} from "../user";
   styleUrls: ['./user-details.component.css']
 })
 export class UserDetailsComponent implements OnInit{
+  @ViewChild('elseBlock') elseBlock!: TemplateRef<any>
 
 
   constructor(private route: ActivatedRoute, private userService: UserService, private elementRef: ElementRef) {
@@ -17,7 +18,7 @@ export class UserDetailsComponent implements OnInit{
   user!: User;
   friends: any = [];
   page: number = 1;
-  perPage: number = 5;
+  perPage: number = 3;
   loading: boolean = false;
   userId: any
 
@@ -27,12 +28,12 @@ export class UserDetailsComponent implements OnInit{
         this.userService.getUserById(this.userId).subscribe((res: any) => {
           this.user = res
         })
-        this.getFriends(this.userId)
+        this.getFriendsOnLoad()
         this.scrollToTop();
       })
   }
 
-  getFriends(userId: any) {
+  getFriendsOnScroll(userId: any) {
     this.userService.getUserFriends(userId, this.page, this.perPage).subscribe((res: any) => {
       const newFriends = res.map((item: any) => {
         const friend: User = {
@@ -49,6 +50,24 @@ export class UserDetailsComponent implements OnInit{
     })
   }
 
+  getFriendsOnLoad() {
+    this.userService.getUserFriends(this.userId).subscribe((res: any) => {
+      const friends = res.map((item: any) => {
+        const friend: User = {
+          id: item.friend.id,
+          firstName: item.friend.firstName,
+          lastName: item.friend.lastName,
+          profilePic: item.friend.profilePic,
+          description: item.friend.description
+        }
+        return friend
+      })
+      this.friends = friends
+      this.page++
+      console.log(friends)
+    })
+  }
+
   scrollToTop() {
     this.elementRef.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
@@ -59,7 +78,7 @@ export class UserDetailsComponent implements OnInit{
       window.innerHeight + window.scrollY >= document.body.offsetHeight &&
       !this.loading
     ) {
-      this.getFriends(this.userId);
+      this.getFriendsOnScroll(this.userId);
     }
   }
 }

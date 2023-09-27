@@ -1,26 +1,33 @@
 <div class="p-10 text-white flex flex-col gap-10 ">
   <div>
-    <a routerLink="/users-list" class="hover:underline"> <- Back to Main Page</a>
+    <a routerLink="/users-list" class="hover:underline text-3xl text-pink" > <- Back to Main Page</a>
   </div>
-  <div class="border p-10">
-    <div class=" flex gap-10" >
-      <div class="w-1/3">
-        <img  [src]="user?.profilePic" alt="user"  >
-      </div>
-      <div class="text-xl w-2/3 flex flex-col gap-5">
-        <h1><span>Name: </span>{{user?.firstName}}</h1>
-        <h1><span>Last Name: </span>{{user?.lastName}}</h1>
-        <p><span>Description: </span>{{user?.description}}</p>
+  <div *ngIf="user">
+    <div class=" p-10 bg-pink" >
+      <div class=" flex gap-10">
+        <div class="w-1/3">
+          <img  [src]="user.profilePic" alt="user"  >
+        </div>
+        <div class="w-2/3 flex flex-col gap-5 tracking-wide text-2xl">
+          <h1><span>Name: </span>{{user.firstName}}</h1>
+          <h1><span>Last Name: </span>{{user.lastName}}</h1>
+          <p><span>Description: </span>{{user.description}}</p>
+        </div>
       </div>
     </div>
-  </div>
-  <div>
-    <header>
-      <h1 class="text-4xl pl-10 p-5">Friends:</h1>
-    </header>
-    <div class="border grid grid-cols-4 p-10 gap-10">
-      <app-user-item *ngFor="let data of friends" [userData]="data"></app-user-item>
+    <div *ngIf="friends.length > 0; else elseBlock">
+      <header>
+        <h1 class="text-4xl pl-10 p-5 text-pink font-bold">Friends:</h1>
+      </header>
+      <div class="border grid grid-cols-4 p-10 gap-10">
+        <app-user-item *ngFor="let data of friends" [userData]="data"></app-user-item>
+      </div>
     </div>
-
+    <ng-template #elseBlock>
+      <div class="border-t border-pink pt-3">
+        <h1 class="text-3xl text-pink font-bold">Friends Did Not Found</h1>
+      </div>
+    </ng-template>
   </div>
+  <div *ngIf="!user" class="text-3xl text-pink font-bold">User Not Found</div>
 </div>

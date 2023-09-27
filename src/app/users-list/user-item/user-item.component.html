@@ -1,9 +1,8 @@
-<div  class="text-white bg-pink p-5 flex flex-col items-center  rounded-md gap-3" >
+<a [routerLink]="['/users-list/user', userData.id]" class=" shadow-2xl shadow-pink text-pink font-bold hover:text-white hover:bg-pink transition-all cursor-pointer p-5 flex flex-col items-center  rounded-md gap-3" >
   <div class="rounded-full overflow-hidden">
-    <img [src]="userData?.profilePic"  alt="user" width="200" class="min-h-[15rem] max-w-[15rem] max-h-[15rem] min-w-[15rem]">
+    <img [src]="userData.profilePic"  alt="user" width="200" class="min-h-[15rem] max-w-[15rem] max-h-[15rem] min-w-[15rem]">
   </div>
   <div class="flex flex-col items-center gap-3">
-    <h1>{{userData?.firstName}} {{userData?.lastName}}</h1>
-    <a [routerLink]="['/users-list/user', userData.id]"  class="hover:underline text-sm transition-all">More details -></a>
+    <h1>{{userData.firstName}} {{userData.lastName}}</h1>
   </div>
-</div>
+</a>
