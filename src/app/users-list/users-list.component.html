@@ -5,10 +5,11 @@
   <main class="grid grid-cols-1 md:grid-cols-2 gap-20 lg:grid-cols-3 mx-auto" *ngIf="users.length > 0; else elseBlock">
     <app-user-item *ngFor="let user of users" [userData]="user" [navigateTrue]="true"></app-user-item>
   </main>
-  <ng-template #elseBlock>
+  <div *ngIf="!loading || users.length !== 0">
     <div class="text-3xl font-bold text-pink mt-20 ">
       <h1>Users Not Found</h1>
     </div>
-  </ng-template>
+  </div>
+  <app-loading-item *ngIf="loading"></app-loading-item>
 </div>
 
