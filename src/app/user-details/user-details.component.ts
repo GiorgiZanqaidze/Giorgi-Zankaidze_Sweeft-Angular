@@ -34,9 +34,11 @@ export class UserDetailsComponent implements OnInit{
   }
 
   getFriendsOnScroll() {
+    this.loading = true;
     this.userService.getUserFriends(this.userId, this.page, this.perPage).subscribe((friends: User[]) => {
       this.friends = [...this.friends, ...friends]
       this.page++
+      this.loading = false;
     })
   }
 
