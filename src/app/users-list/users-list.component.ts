@@ -41,7 +41,7 @@ export class UsersListComponent implements OnInit{
   @HostListener('window:scroll', ['$event'])
   onScroll() {
     if (
-      window.innerHeight + window.scrollY >= document.body.offsetHeight &&
+      window.innerHeight + window.scrollY + 10 >= document.body.offsetHeight &&
       !this.loading
     ) {
       this.loadUsers();
