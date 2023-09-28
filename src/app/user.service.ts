@@ -10,20 +10,22 @@ export class UserService {
 
   constructor(private http: HttpClient) { }
 
+  baseUrl = "http://localhost:3000"
+
   public getUsers(page: number, perPage: number) {
     const start: number = (page - 1) * perPage
     const end: number = start + perPage
-    return this.http.get(`http://localhost:3000/users?_start=${start}&_end=${end}`)
+    return this.http.get(`${this.baseUrl}/users?_start=${start}&_end=${end}`)
   }
 
-  public getUserById(id: number|string) {
-    return this.http.get(`http://localhost:3000/users/${id}`)
+  public getUserById(id: number) {
+    return this.http.get(`${this.baseUrl}/users/${id}`)
   }
 
   public getUserFriends(id: number, page: number, perPage: number) {
     const start: number = (page - 1) * perPage
     const end: number = start + perPage
-    return this.http.get(`http://localhost:3000/friends?userId=${id}&_start=${start}&_end=${end}`)
+    return this.http.get(`${this.baseUrl}/friends?userId=${id}&_start=${start}&_end=${end}`)
       .pipe(map((data: any) => {
           const friendsArray:User[] = data.map((user: any) => {
             return {

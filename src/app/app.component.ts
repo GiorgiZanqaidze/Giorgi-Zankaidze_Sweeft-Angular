@@ -24,15 +24,12 @@ export class AppComponent implements OnInit{
 
   @HostListener('window:scroll', ['$event'])
   onScroll() {
-    console.log(window.scrollY)
     if (window.scrollY >= 300) {
       this.showScrollIcon = true
     } else {
       this.showScrollIcon = false
     }
   }
-
-
 
 
 }

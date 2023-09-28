@@ -1,27 +1,32 @@
-# SweeftAngular
+# Sweeft Angular | Giorgi Zankaidze 🎉
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
+## Prerequisites 🔍
+Before you can run the project, make sure you have the following tools and dependencies installed on your system:
 
-## Development server
+1. 🟢 [Node.js](https://nodejs.org/): You need Node.js to run JavaScript on your computer. Download and install it if you haven't already. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+2. 🅰️ [Angular CLI](https://angular.io/cli): Install the Angular CLI globally using the following command: `npm install -g @angular/cli`
 
-## Code scaffolding
+3. 📦 [JSON Server](https://github.com/typicode/json-server): JSON Server is used to simulate a backend API. Install it globally with the following command: `npm install -g json-server` 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting Started 🚀
 
-## Build
+To get started with this project, follow these steps:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. 📋 Clone the repository to your local machine:
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. 🧭 Navigate to the project directory:
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. 🔧 Install npm: `npm install` 
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Development server 🖥️
+
+Now that you have set up the project and installed the necessary dependencies, you can run the application locally using Angular's development server and JSON Server for API simulation.
+
+1. 📊 In Terminal 1 run: `json-server -w db.json` 
+
+2. 🖥️ In Terminal 2 run:  `ng serve`
