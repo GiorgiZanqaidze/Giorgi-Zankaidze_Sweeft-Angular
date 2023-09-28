@@ -13,6 +13,8 @@ export class UsersListComponent implements OnInit{
   constructor(private userService: UserService) {
   }
 
+  errorMessage = "Users Not Found"
+
   users:User[] = []
   page: number = 1;
   perPage: number = 9;

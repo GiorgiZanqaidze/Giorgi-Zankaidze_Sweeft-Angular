@@ -9,6 +9,7 @@ import {NgOptimizedImage} from "@angular/common";
 import { UserDetailsComponent } from './pages/user-details/user-details.component';
 import {HttpClientModule} from "@angular/common/http";
 import { LoadingItemComponent } from './components/loading-item/loading-item.component';
+import { ErrorMessageComponent } from './components/error-message/error-message.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { LoadingItemComponent } from './components/loading-item/loading-item.com
     UserItemComponent,
     UserDetailsComponent,
     LoadingItemComponent,
+    ErrorMessageComponent,
   ],
   imports: [
     BrowserModule,
