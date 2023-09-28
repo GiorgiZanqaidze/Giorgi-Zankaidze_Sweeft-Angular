@@ -1,7 +1,7 @@
 import {Component, HostListener, OnInit, ElementRef, ViewChild, TemplateRef} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
-import {UserService} from "../user.service";
-import {User} from "../user";
+import {UserService} from "../../user.service";
+import {User} from "../../user";
 
 @Component({
   selector: 'app-user-details',
@@ -49,7 +49,7 @@ export class UserDetailsComponent implements OnInit{
   @HostListener('window:scroll', ['$event'])
   onScroll() {
     if (
-      window.innerHeight + window.scrollY >= document.body.offsetHeight &&
+      window.innerHeight + window.scrollY + 10 >= document.body.offsetHeight &&
       !this.loading
     ) {
       this.getFriendsOnScroll();

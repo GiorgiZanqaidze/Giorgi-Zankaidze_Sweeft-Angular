@@ -1,6 +1,6 @@
 import {Component, HostListener, OnInit, TemplateRef, ViewChild} from '@angular/core';
-import {UserService} from "../user.service";
-import {User} from "../user";
+import {UserService} from "../../user.service";
+import {User} from "../../user";
 
 @Component({
   selector: 'app-users-list',
