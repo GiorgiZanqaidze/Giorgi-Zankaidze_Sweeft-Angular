@@ -1,7 +1,7 @@
 import {Component, HostListener, OnInit, ElementRef, ViewChild, TemplateRef} from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
-import {UserService} from "../user.service";
-import {User} from "../user";
+import {ActivatedRoute, Params, Router} from "@angular/router";
+import {UserService} from "../../user.service";
+import {User} from "../../user";
 
 @Component({
   selector: 'app-user-details',
@@ -12,47 +12,54 @@ export class UserDetailsComponent implements OnInit{
   @ViewChild('elseBlock') elseBlock!: TemplateRef<any>
 
 
-  constructor(private route: ActivatedRoute, private userService: UserService, private elementRef: ElementRef) {
-  }
+  constructor(
+    private route: ActivatedRoute,
+    private userService: UserService,
+
+    private router: Router
+  )
+  {}
+
+  userNotFoundMessage = "User Not Found"
+  friendsNotFoundMessage = "Friends Not Found"
 
   user!: User;
-  friends: any = [];
-  page: number = 1;
-  perPage: number = 2;
-  loading: boolean = false;
+  friends: User[] = [];
   userId!: number
+  loading = false;
+  page = 1;
+  perPage = 2;
 
   ngOnInit() {
-      this.route.params.subscribe((params) => {
+      this.loading = true;
+      this.route.params.subscribe((params: Params) => {
         this.userId = +params['id']
-        this.userService.getUserById(this.userId).subscribe((res: any) => {
-          this.user = res
+        this.userService.getUserById(this.userId).subscribe((user: any) => {
+          this.user = user
+          this.loading = false;
         })
         this.getFriendsOnScroll()
-        this.scrollToTop();
       })
   }
 
   getFriendsOnScroll() {
-    this.loading = true;
     this.userService.getUserFriends(this.userId, this.page, this.perPage).subscribe((friends: User[]) => {
       this.friends = [...this.friends, ...friends]
       this.page++
-      this.loading = false;
     })
-  }
-
-  scrollToTop() {
-    this.elementRef.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   @HostListener('window:scroll', ['$event'])
   onScroll() {
     if (
-      window.innerHeight + window.scrollY >= document.body.offsetHeight &&
+      window.innerHeight + window.scrollY + 10 >= document.body.offsetHeight &&
       !this.loading
     ) {
       this.getFriendsOnScroll();
     }
+  }
+
+  navigate() {
+    this.router.navigate(['users-list'])
   }
 }

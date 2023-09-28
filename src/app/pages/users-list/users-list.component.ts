@@ -1,6 +1,6 @@
 import {Component, HostListener, OnInit, TemplateRef, ViewChild} from '@angular/core';
-import {UserService} from "../user.service";
-import {User} from "../user";
+import {UserService} from "../../user.service";
+import {User} from "../../user";
 
 @Component({
   selector: 'app-users-list',
@@ -12,6 +12,8 @@ export class UsersListComponent implements OnInit{
 
   constructor(private userService: UserService) {
   }
+
+  errorMessage = "Users Not Found"
 
   users:User[] = []
   page: number = 1;
