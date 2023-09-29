@@ -5,7 +5,6 @@ import {Router} from "@angular/router";
 @Component({
   selector: 'app-user-item',
   templateUrl: './user-item.component.html',
-  styleUrls: ['./user-item.component.css']
 })
 export class UserItemComponent{
 
