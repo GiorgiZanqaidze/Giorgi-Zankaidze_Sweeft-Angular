@@ -42,7 +42,11 @@ export class UserDetailsComponent implements OnInit{
     this.userService.getUserFriends(this.userId, this.page, this.perPage).subscribe((friends: User[]) => {
       this.friends = [...this.friends, ...friends]
       this.page++
-    })
+    },
+      (error) => {
+        console.error('Error loading users', error);
+        this.loading = false;
+      })
   }
 
   @HostListener('window:scroll', ['$event'])
