@@ -6,19 +6,8 @@ import {User} from "../../user";
 @Component({
   selector: 'app-user-details',
   templateUrl: './user-details.component.html',
-  styleUrls: ['./user-details.component.css']
 })
 export class UserDetailsComponent implements OnInit{
-  @ViewChild('elseBlock') elseBlock!: TemplateRef<any>
-
-
-  constructor(
-    private route: ActivatedRoute,
-    private userService: UserService,
-
-    private router: Router
-  )
-  {}
 
   userNotFoundMessage = "User Not Found"
   friendsNotFoundMessage = "Friends Not Found"
@@ -29,6 +18,13 @@ export class UserDetailsComponent implements OnInit{
   loading = false;
   page = 1;
   perPage = 2;
+
+  constructor(
+    private route: ActivatedRoute,
+    private userService: UserService,
+    private router: Router
+  )
+  {}
 
   ngOnInit() {
       this.loading = true;
@@ -46,7 +42,11 @@ export class UserDetailsComponent implements OnInit{
     this.userService.getUserFriends(this.userId, this.page, this.perPage).subscribe((friends: User[]) => {
       this.friends = [...this.friends, ...friends]
       this.page++
-    })
+    },
+      (error) => {
+        console.error('Error loading users', error);
+        this.loading = false;
+      })
   }
 
   @HostListener('window:scroll', ['$event'])

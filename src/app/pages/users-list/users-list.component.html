@@ -1,11 +1,14 @@
 <div class="p-10 flex flex-col gap-5 border-l border-light-pink border-t rounded-tl-xl">
   <header class="border-light-pink pb-5 mb-5 border-b-[1px]">
-    <h1 class="font-bold text-white tracking-widest text-md md:text-4xl">Users List</h1>
+    <h1 class="font-bold text-white tracking-widest text-3xl md:text-4xl">Users List</h1>
   </header>
-  <main class="grid grid-cols-1 md:grid-cols-2 gap-20 lg:grid-cols-3 mx-auto" *ngIf="users.length; else elseBlock">
+  <main class="grid grid-cols-1 md:grid-cols-2 gap-20 lg:grid-cols-3 mx-auto" *ngIf="users.length">
     <app-user-item *ngFor="let user of users" [userData]="user" [navigateTrue]="true"></app-user-item>
   </main>
-  <app-error-message *ngIf="!loading && !users.length" [message]="errorMessage"></app-error-message>
+  <div *ngIf="!loading && !users.length" class="text-white flex flex-col gap-5">
+    <app-error-message [message]="errorMessage"></app-error-message>
+    <app-project-instructions></app-project-instructions>
+  </div>
   <app-loading-item *ngIf="loading"></app-loading-item>
 </div>
 

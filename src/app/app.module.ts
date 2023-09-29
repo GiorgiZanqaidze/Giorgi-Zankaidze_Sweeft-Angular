@@ -10,6 +10,8 @@ import { UserDetailsComponent } from './pages/user-details/user-details.componen
 import {HttpClientModule} from "@angular/common/http";
 import { LoadingItemComponent } from './components/loading-item/loading-item.component';
 import { ErrorMessageComponent } from './components/error-message/error-message.component';
+import { ButtonNavigateComponent } from './components/button-navigate/button-navigate.component';
+import { ProjectInstructionsComponent } from './components/project-instructions/project-instructions.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { ErrorMessageComponent } from './components/error-message/error-message.
     UserDetailsComponent,
     LoadingItemComponent,
     ErrorMessageComponent,
+    ButtonNavigateComponent,
+    ProjectInstructionsComponent,
   ],
   imports: [
     BrowserModule,
