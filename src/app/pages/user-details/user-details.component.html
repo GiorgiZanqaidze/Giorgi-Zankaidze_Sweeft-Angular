@@ -1,10 +1,10 @@
 <div class="p-10 text-white flex flex-col gap-10 border-l border-light-pink border-t rounded-tl-xl">
-  <header class="flex justify-between items-center gap-10 flex-col md:flex-row">
+  <header class="flex justify-between items-start sm:items-center gap-10 flex-col md:flex-row">
     <app-button-navigate (click)="navigate()" *ngIf="!loading" ></app-button-navigate>
     <h1 *ngIf="user" class="text-3xl">{{user.firstName}}'s Profile</h1>
   </header>
   <main *ngIf="user && !loading">
-    <div class=" p-10 shadow-2xl border-b border-r border-light-pink rounded-br-xl" >
+    <div class=" p-10 border-b border-r border-light-pink rounded-br-xl" >
       <div class="flex gap-10 flex-col items-center md:flex-row ">
         <div class="">
           <img [src]="user.profilePic"  alt="user" class="max-w-full sm:max-w-[25rem] ">

@@ -8,16 +8,6 @@ import {User} from "../../user";
   templateUrl: './user-details.component.html',
 })
 export class UserDetailsComponent implements OnInit{
-  @ViewChild('elseBlock') elseBlock!: TemplateRef<any>
-
-
-  constructor(
-    private route: ActivatedRoute,
-    private userService: UserService,
-
-    private router: Router
-  )
-  {}
 
   userNotFoundMessage = "User Not Found"
   friendsNotFoundMessage = "Friends Not Found"
@@ -28,6 +18,13 @@ export class UserDetailsComponent implements OnInit{
   loading = false;
   page = 1;
   perPage = 2;
+
+  constructor(
+    private route: ActivatedRoute,
+    private userService: UserService,
+    private router: Router
+  )
+  {}
 
   ngOnInit() {
       this.loading = true;

@@ -7,10 +7,6 @@ import {User} from "../../user";
   templateUrl: './users-list.component.html',
 })
 export class UsersListComponent implements OnInit{
-  @ViewChild('elseBlock') elseBlock!: TemplateRef<any>
-
-  constructor(private userService: UserService) {
-  }
 
   errorMessage = "Users Not Found"
 
@@ -19,6 +15,8 @@ export class UsersListComponent implements OnInit{
   perPage: number = 9;
   loading: boolean = false;
 
+  constructor(private userService: UserService) {
+  }
 
   ngOnInit() {
     this.loadUsers()

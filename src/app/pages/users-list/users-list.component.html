@@ -2,7 +2,7 @@
   <header class="border-light-pink pb-5 mb-5 border-b-[1px]">
     <h1 class="font-bold text-white tracking-widest text-3xl md:text-4xl">Users List</h1>
   </header>
-  <main class="grid grid-cols-1 md:grid-cols-2 gap-20 lg:grid-cols-3 mx-auto" *ngIf="users.length; else elseBlock">
+  <main class="grid grid-cols-1 md:grid-cols-2 gap-20 lg:grid-cols-3 mx-auto" *ngIf="users.length">
     <app-user-item *ngFor="let user of users" [userData]="user" [navigateTrue]="true"></app-user-item>
   </main>
   <div *ngIf="!loading && !users.length" class="text-white flex flex-col gap-5">

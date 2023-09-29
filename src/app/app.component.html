@@ -2,7 +2,7 @@
   <div class="max-w-7xl mx-auto">
     <router-outlet></router-outlet>
   </div>
-  <div *ngIf="showScrollIcon" class="fixed bottom-10 right-10 text-white rounded-full overflow-hidden" (click)="scrollToTop()">
+  <div *ngIf="showScrollIcon" class="fixed bottom-5 right-5 sm:bottom-10 sm:right-10 text-white" (click)="scrollToTop()">
     <app-button-navigate [rotate]="true"></app-button-navigate>
   </div>
 </div>
