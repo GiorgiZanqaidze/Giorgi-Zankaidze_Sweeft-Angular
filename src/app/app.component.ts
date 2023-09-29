@@ -3,7 +3,6 @@ import {Component, ElementRef, HostListener, OnInit} from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
 
@@ -15,12 +14,9 @@ export class AppComponent implements OnInit{
     this.elementRef.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
-
-
   ngOnInit() {
     this.onScroll()
   }
-
 
   @HostListener('window:scroll', ['$event'])
   onScroll() {
